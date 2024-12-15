@@ -1,0 +1,196 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Menu Lateral */
+.bg-pink {
+    background-color: #262e92;
+    height: 100vh;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    background-color: #6c7496;
+}
+
+.nav-link.active {
+    background-color: #6c7496;
+}
+
+/* Barra Superior */
+
+.btn-pink {
+    background-color: #262e92;
+    border: none;
+}
+
+.btn-pink:hover {
+    background-color: #262d9277;
+}
+
+
+.calendar-header {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.table th,
+.table td {
+    vertical-align: top;
+    height: 150px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%; 
+}
+
+td {
+    padding: 0; 
+    position: relative; 
+    height: 120px; 
+}
+
+.event {
+    border: 5px solid;
+    border-radius: 5px; 
+    height: 100%; 
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 8px; 
+    font-size: 14px; 
+    line-height: 1.2; 
+    overflow: hidden; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color: white; 
+}
+
+
+.event.green {
+    border-color: #28a745;
+    background-color: #eefdf1;
+    color: #000000;
+}
+
+.event.blue {
+    border-color: #007bff;
+    background-color: #ebf3fc;
+    color: #007bff;
+}
+
+.event.yellow {
+    border-color: #ffc107;
+    background-color: #fffaea;
+    color: #ffc107;
+}
+
+.event.orange {
+    border-color: #fd7e14;
+    background-color: #fff3e8;
+    color: #fd7e14;
+}
+
+.event.purple {
+    border-color: #6f42c1;
+    background-color: #f4effd;
+    color: #6f42c1;
+}
+
+.event.red {
+    border-color: #dc3545;
+    background-color: #fff1f3;
+    color: #dc3545;
+}
+
+
+.event .photos {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.event .photos img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: -5px; 
+    border: 2px solid #fff; 
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.7); 
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    max-width: 800px; 
+    animation: fadeIn 0.5s ease-in-out; 
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .photo-gallery img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .photo-gallery img:hover {
+    transform: scale(1.1); 
+  }
+  
+  /* Animação de entrada do modal */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
